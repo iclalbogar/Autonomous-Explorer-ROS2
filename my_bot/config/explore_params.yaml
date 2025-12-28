@@ -1,0 +1,14 @@
+explore_node:
+  ros__parameters:
+    robot_base_frame: base_link
+    costmap_topic: /global_costmap/costmap
+    costmap_updates_topic: /global_costmap/costmap_updates
+    visualize: true
+    planner_frequency: 1.0       # Sık sık plan yap (Atik olsun)
+    progress_timeout: 60.0       # 60 saniye boyunca pes etme
+    potential_scale: 3.0
+    orientation_scale: 0.0
+    gain_scale: 1.0
+    min_frontier_size: 0.30      # 30 cm'lik boşlukları bile hedefle
+    return_to_init: true         # Bitince başladığı yere dön
+    use_sim_time: true
